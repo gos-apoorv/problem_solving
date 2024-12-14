@@ -10,7 +10,7 @@ class Solution:
         # Progress through LinkedList in 2 step
         step_2 = head
 
-        while step_2.next is not None and step_2.next.next is not None:
+        while step_2.next != None and step_2.next.next != None:
             step_1 = step_1.next
             step_2 = step_2.next.next
 
