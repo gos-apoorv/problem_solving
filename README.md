@@ -1,6 +1,6 @@
 A collection of problem solving using python and java
-<!---LeetCode Topics Start-->
-# LeetCode Topics
+<!--- Topics Start-->
+# Topics
 ## Array
 |  |
 | ------- |
