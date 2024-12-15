@@ -3,6 +3,9 @@ class Solution:
 
     def canConstruct(self, ransomNote: str, magazine: str) -> bool:
 
+        if len(ransomNote) > len(magazine):
+            return False
+
         # Create hashmap of a string with its frequency
         def createHashMap(input_string: str) -> Dict[str, int]:
             letter_map = {}
