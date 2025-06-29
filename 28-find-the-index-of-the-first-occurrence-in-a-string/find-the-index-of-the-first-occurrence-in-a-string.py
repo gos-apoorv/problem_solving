@@ -11,7 +11,6 @@ class Solution:
                         break
                     else:
                         t += 1
-                print(i, " ", t, " ")
                 if t == sstr_length:
                     return i
 
