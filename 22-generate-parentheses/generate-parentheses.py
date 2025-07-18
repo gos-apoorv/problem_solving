@@ -15,9 +15,9 @@ class Solution:
             set_str = []
             if len(temp_str) == 2 * n:
                 if is_valid(temp_str):
-                    print("temp_str=",temp_str)
+                    # print("temp_str=",temp_str)
                     set_str.append(temp_str)
-                    print("set_str=",set_str)
+                    # print("set_str=",set_str)
             else:
                 if left_count > 0:
                     left_str = backtracking(temp_str + '(', left_count - 1, right_count)
