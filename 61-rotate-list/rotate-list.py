@@ -15,12 +15,10 @@ class Solution:
             list_node = list_node.next
             index += 1
 
-        print(index)
         if index <= 1 or k % index == 0:
             return head
 
         swaps = k if k < index else k % index
-        print(swaps)
 
         list_node = head
         for _ in range(1, index - swaps):
