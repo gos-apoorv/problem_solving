@@ -10,7 +10,6 @@ class Solution:
         while left <= right:
 
             mid = (left + right) // 2
-            print(left, right, mid, nums[mid])
             if nums[mid] == target:
                 if lower:
                     if mid == left or nums[mid - 1] < target:
