@@ -9,13 +9,16 @@ class Solution:
         
         def tree_traversal(node:Optional[TreeNode]) -> List[int]:
             result = []
-            if node.left:
-                result.extend(tree_traversal(node.left))
+            stack = []
             
-            result.append(node.val)
-
-            if node.right:
-                result.extend(tree_traversal(node.right))
+            while node or stack:
+                while node:
+                    stack.append(node)
+                    node = node.left
+                
+                node = stack.pop()
+                result.append(node.val)
+                node = node.right                    
             
             return result
         
