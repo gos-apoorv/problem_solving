@@ -9,7 +9,7 @@ class Solution:
         result = []
         direction = True
         while i < rows and j < cols:
-            print(i, j, direction)
+            # print(i, j, direction)
             result.append(mat[i][j])
 
             if direction:
