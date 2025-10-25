@@ -9,7 +9,6 @@ class Solution:
             return True
 
         while j <= t_len-1 and i <= s_len-1:
-            print("s==", s[i], "||t==", t[j])
             if s[i] == t[j]:
                 i += 1
                 j += 1
