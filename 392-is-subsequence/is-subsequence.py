@@ -16,7 +16,6 @@ class Solution:
             else:
                 j += 1
 
-        print("s==", i, "||t==", j, "||s_len==",s_len,"||t_len==",t_len)
         if i == s_len:
             return True
         return False
