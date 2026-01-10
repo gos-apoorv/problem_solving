@@ -8,26 +8,25 @@ class Solution:
 
             adj = defaultdict(list)
 
-            for u,v,w in flights:
+            for u, v, w in flights:
                 adj[u].append((v,w))
             
-            # weight, node, steps
+            # distance, node, steps
             pq = [(0, src, 0)]
 
             while pq:
-                weight, node, steps = heapq.heappop(pq)
+                distance, node, steps = heapq.heappop(pq)
 
-                if steps > k+1 or steps >= stops[node] :
+                if steps > k + 1 or steps >= stops[node]:
                     continue
                 
                 stops[node] = steps
-
+                
                 if node == dst:
-                    return weight
-
-
-                for neighbour, price in adj[node]:
-                    heapq.heappush(pq,(weight + price ,neighbour ,steps + 1))
+                    return distance
+                
+                for neighbour,price in adj[node]:
+                    heapq.heappush(pq,(distance + price, neighbour, steps + 1))
 
       
             return -1
