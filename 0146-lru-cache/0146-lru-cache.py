@@ -16,8 +16,9 @@ class LRUCache:
         
         self.dict[key] = value
 
-        if len(self.dict) > self.capacity:
+        if len(self.dict.keys()) > self.capacity:
             self.dict.popitem(False)
+        
 
 
 
